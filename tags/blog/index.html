@@ -82,6 +82,52 @@
             elP: '.views-post'
       }
 </script>
+<script src="./js/local-search.js"></script>
+<style>
+.custom-modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.custom-modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+    text-align: center;
+}
+
+.custom-search-result p {
+    margin: 5px 0; /* 设置摘要的上下间距 */
+    font-size: 14px; /* 设置摘要字体大小 */
+    color: #666; /* 设置摘要字体颜色 */
+}
+
+.custom-close {
+    position: relative;
+    color: #aaa;
+    float: right;
+    font-size: 35px;
+    font-weight: bold;
+
+}
+
+.custom-close:hover,
+.custom-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+</style>
 <div class="container">
     <div class="row blog-box-shadow">
         <!--博客主栏开始-->
@@ -96,18 +142,30 @@
                         
                           <li class="blog-nav-item"><a href="/about/" class="transition">关于</a></li>
                         
-                          <li class="blog-nav-item"><a href="/links/" class="transition">链接</a></li>
+                          <li class="blog-nav-item"><a href="/links/" class="transition">收藏网页</a></li>
+                        
+                          <li class="blog-nav-item"><a href="/message/" class="transition">留言板</a></li>
                         
                         <div class="blog-navbar-right">
                             <form action="">
                                 <div class="input-group">
-                                    <input type="text" class="blog-header-search" placeholder="search...">
-                                    <buttn type="submit" class="blog-header-search-btn"><i class="fa fa-search"></i></buttn>
+                                  <input type="text" class="blog-header-search" id="local-search-input" placeholder="搜索文章...">
+                                  <button type="submit" class="blog-header-search-btn" ><i class="fa fa-search"></i></button>
                                 </div>
                             </form>
                         </div>
                     </ul>
                 </nav>
+                <div class="custom-modal" id="myModal" style="display: none;">
+                    <div class="custom-modal-content">
+                        <span class="custom-close" id="closeButton">&times;</span>
+                        <h4 class="custom-modal-title">搜索结果</h4>
+                        <br>
+                        <div id="local-search-results"></div>
+
+                    </div>
+                </div>
+                    
             </header>
                 
 <header class="blog-post-page-title blog-search-page-title">
@@ -158,7 +216,7 @@
 </div>
 
                 
-            <footer class="blog-footer">
+            <footer class="blog-footer" style="position:absolute;bottom:0;left:0;right:0;">
                 <p class="blog-footer-left">Copyright ©  2024 <a href="https://github.com/qiminzidu/MyStudy.github.io" target="_blank">一粒红尘</a></p>
                 <p class="blog-footer-right">Powered by <a href="https://hexo.io" target="_blank">Hexo</a>,Theme <a href="https://note.isweic.com/themes-life/" target="_blank">Life</a></p>
             </footer>
@@ -215,17 +273,16 @@
                 <ul class="blog-sidebar-tags-ul blog-sidebar-padding">
                   
                     
+                      <li><a href="/tags/%E7%94%9F%E6%B4%BB/" class="tag-could" data-toggle="tooltip" data-placement="top" title="生活">生活</a></li>
+                    
                       <li><a href="/tags/hexo/" class="tag-could" data-toggle="tooltip" data-placement="top" title="hexo">hexo</a></li>
                     
                       <li><a href="/tags/blog/" class="tag-could" data-toggle="tooltip" data-placement="top" title="blog">blog</a></li>
                     
                       <li><a href="/tags/%E6%8A%80%E6%9C%AF/" class="tag-could" data-toggle="tooltip" data-placement="top" title="技术">技术</a></li>
                     
-                      <li><a href="/tags/%E7%94%9F%E6%B4%BB/" class="tag-could" data-toggle="tooltip" data-placement="top" title="生活">生活</a></li>
-                    
                   
                 </ul>
-            </div>
             <script>
               // 博客侧栏标签云随机色
               var tag_cloud = $('.tag-could');
@@ -244,6 +301,7 @@
 </div>
 <script src="./js/LeanStatistics.min.js"></script>
 <script src="./js/Life.js"></script>
+
 <script type="text/javascript">
     hljs.initHighlightingOnLoad();
     hljs.initLineNumbersOnLoad();

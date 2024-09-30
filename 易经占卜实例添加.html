@@ -1,0 +1,1631 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>一粒红尘 | 一粒红尘</title><meta name="author" content="一粒红尘"><meta name="copyright" content="一粒红尘"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Document              * {             box-sizing: border-box;         }          #fitten-case-content-title {             text-align: center;             border-bottom: 2px solid #00">
+<meta property="og:type" content="website">
+<meta property="og:title" content="一粒红尘">
+<meta property="og:url" content="https://github.com/qiminzidu/MyStudy.github.io/%E6%98%93%E7%BB%8F%E5%8D%A0%E5%8D%9C%E5%AE%9E%E4%BE%8B%E6%B7%BB%E5%8A%A0">
+<meta property="og:site_name" content="一粒红尘">
+<meta property="og:description" content="Document              * {             box-sizing: border-box;         }          #fitten-case-content-title {             text-align: center;             border-bottom: 2px solid #00">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://jsd.012700.xyz/gh/jerryc127/CDN@latest/cover/default_bg.png">
+<meta property="article:published_time" content="2024-09-30T06:41:59.859Z">
+<meta property="article:modified_time" content="2024-09-30T06:41:59.859Z">
+<meta property="article:author" content="一粒红尘">
+<meta property="article:tag" content="生活、读书、音乐、历史、写作、技术、生活、一粒红尘">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://jsd.012700.xyz/gh/jerryc127/CDN@latest/cover/default_bg.png"><link rel="shortcut icon" href="/./images/%E5%B0%8F%E7%86%8A.png"><link rel="canonical" href="https://github.com/qiminzidu/MyStudy.github.io/%E6%98%93%E7%BB%8F%E5%8D%A0%E5%8D%9C%E5%AE%9E%E4%BE%8B%E6%B7%BB%E5%8A%A0"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!true && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        if (name && globalFn[key][name]) return
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"top_n_per_article":-1,"unescape":false,"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: {"chs_to_cht":"已切换为繁体中文","cht_to_chs":"已切换为简体中文","day_to_night":"已切换为深色模式","night_to_day":"已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"top-center"},
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: true,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '一粒红尘',
+  isPost: false,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-09-30 14:41:59'
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/./images/%E5%B0%8F%E7%86%8A.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">2</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">7</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-calendar"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/message/"><i class="fa-fw fas fa-comment"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/books/"><i class="fa-fw fas fa-book"></i><span> 书单</span></a></div><div class="menus_item"><a class="site-page" href="/links/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user"></i><span> 关于</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><img class="site-icon" src="/./images/%E5%B0%8F%E7%86%8A.png" alt="Logo"><span class="site-name">一粒红尘</span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-calendar"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/message/"><i class="fa-fw fas fa-comment"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/books/"><i class="fa-fw fas fa-book"></i><span> 书单</span></a></div><div class="menus_item"><a class="site-page" href="/links/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user"></i><span> 关于</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><h1 class="title-seo">一粒红尘</h1></header><main class="layout" id="content-inner"><div id="page"><div id="article-container"><!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        #fitten-case-content-title {
+            text-align: center;
+            border-bottom: 2px solid #000;
+        }
+
+        #fitten-yg5 {
+            display: block;
+            text-align: center;
+            padding: 5px;
+        }
+
+        .fitten-table-style {
+            width: 50%;
+            background-color: #cccccc;
+            margin: 0 auto;
+            table-layout: fixed;
+        }
+
+        .fitten-row-light {
+            background-color: #f5f5f5;
+        }
+
+        .fitten-row-dark {
+            background-color: #eeeeee;
+        }
+
+        .fitten-cell-title,
+        .fitten-cell-select {
+            padding: 5px 0;
+            vertical-align: middle;
+            line-height: 5px;
+        }
+
+        .fitten-cell-title {
+            width: 25%;
+            text-align: center;
+            user-select: none;
+        }
+
+        label {
+            user-select: none;
+        }
+
+        .fitten-cell-select {
+            width: 25%;
+        }
+
+        #fitten-case-content-textarea {
+            width: 100%;
+            height: 200px;
+            padding: 10px;
+            font-size: 20px;
+            resize: none;
+            color: #ff4242;
+        }
+
+        #fitten-add-case-content-btn {
+            background-color: #4caf50;
+            color: white;
+            padding: 5px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            justify-content: center;
+            align-items: center;
+            font-size: 15px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 10px;
+            left: 50%;
+            border: 0px;
+        }
+
+        #fitten-add-case-content-btn:hover {
+            background-color: #ff4242;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0);
+        }
+
+        #fitten-add-case-content-box {
+            left: 0%;
+            right: 50%;
+            width: 100%;
+            height: 100%;
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+
+        #fitten-gua-container {
+            position: relative;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            margin-top: 20px;
+            width: 100%;
+            background: transparent;
+            z-index: -1;
+        }
+
+        canvas {
+            margin: 0 10px;
+            max-width: 100%;
+        }
+
+        #fitten-hugua-canvas,
+        #fitten-biangua-canvas {
+            display: none;
+        }
+
+        #fitten-divination-examples-container {
+            position: absolute;
+            background-color: #ffffff;
+            top: 50px;
+            width: 99%;
+            z-index: 1000;
+            display: none;
+        }
+
+        #fitten-canvas-gallery {
+            height: 540px;
+            position: relative;
+            overflow-y: scroll;
+        }
+
+        #fitten-canvas-gallery::-webkit-scrollbar {
+            display: none;
+        }
+
+        .fitten-canvas-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .fitten-canvas-container img {
+            max-width: 100px;
+            margin: 0 10px;
+            margin-right: 15px;
+        }
+
+        .fitten-canvas-detail-btn {
+            cursor: pointer;
+            color: rgb(0, 0, 0);
+            margin-right: 20px;
+        }
+
+        .fitten-canvas-delete-case-btn {
+            cursor: pointer;
+            color: rgb(0, 0, 0);
+            margin-right: 20px;
+        }
+
+        .fitten-canvas-detail-btn:hover {
+            color: rgb(255, 58, 91);
+            text-decoration: underline;
+        }
+
+        .fitten-canvas-delete-case-btn:hover {
+            color: rgb(255, 58, 91);
+            text-decoration: line-through;
+        }
+
+        .fitten-modal-content img {
+            margin-right: 20px;
+        }
+
+        /* 下面是模态框样式 */
+        .fitten-modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+            padding-top: 60px;
+        }
+
+        .fitten-modal::-webkit-scrollbar {
+            display: none;
+        }
+
+        .fitten-modal-content {
+            background-color: #fefefe;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 90%;
+        }
+
+        #fitten-modal-explanation {
+            text-align: left;
+        }
+
+        .fitten-close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .fitten-close:hover,
+        .fitten-close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .fitten-modal-case-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 30%;
+            text-align: center;
+            position: relative;
+        }
+
+        #fitten-confirmDelete,
+        #fitten-cancelDelete,
+        #fitten-search-divination-examples-btn {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            justify-content: center;
+            align-items: center;
+            font-size: 15px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border: 0px;
+            border-radius: 10px;
+        }
+
+        #fitten-confirmDelete:hover,
+        #fitten-cancelDelete:hover,
+        #fitten-search-divination-examples-btn:hover {
+            background-color: #ff4242;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0);
+        }
+
+        #fitten-modal-DivinationEvent,
+        #fitten-modal-DivinationDate {
+            margin-right: 40px;
+        }
+
+        body.no-scroll {
+            overflow: hidden;
+        }
+
+        #fitten-Search-divination-examples {
+            width: 400px;
+            height: 340px;
+            background-color: #f3f3f3;
+            padding: 10px;
+            border: 2px solid #ccc;
+        }
+
+        #fitten-search-date-box {
+            position: relative;
+            left: -30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3 id="fitten-case-content-title">占卜实例</h3>
+    <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px;">
+        <div id="fitten-add-case-content-box">
+            <div id="fitten-Search-divination-examples">
+                <h4>占卜实例搜索</h4>
+                <div id="fitten-search-date-box">
+                    <label for="">时间搜索</label>
+                    <input type="date" name="date" id="fitten-search-date">
+                </div>
+                <div>
+                    <label for="">卦象搜索</label>
+                    <input type="text" name="gua" id="fitten-search-gua">
+                </div>
+                <br>
+                <button id="fitten-search-divination-examples-btn" onclick="searchDivinationExamples()">搜索占卜实例</button>
+                <br>
+                <img src="../photos/蜡笔小新奔跑.gif" alt="" style="height: 150px;">
+            </div>
+            <div id="fitten-divination-examples-container">
+                <span class="fitten-close" onclick="closeSearchDivinationExamples()">&times;</span>
+                <h4>占卜实例列表</h4>
+                <div id="fitten-canvas-gallery"></div>
+            </div>
+        </div>
+        <dd class="fitten-form" id="fitten-yg5">
+            <h4>占卜实例添加</h4>
+            <table class="fitten-table-style">
+                <div>
+                    <label for="date">占卜时间</label>
+                    <input type="date" name="date" id="fitten-Divination-Date">
+                    ||
+                    <label for="">占卜事件</label>
+                    <input type="text" name="event" id="fitten-Divination-Event">
+                </div>
+                <br>
+                <tbody>
+                    <tr class="fitten-row-light">
+                        <td class="fitten-cell-title">第六爻</td>
+                        <td class="fitten-cell-select">
+                            <select size="1" name="Y6">
+                                <option value="1" selected>少阳 ───</option>
+                                <option value="2">少阴 ─　─</option>
+                                <option value="3">老阳─── ○</option>
+                                <option value="4">老阴─　─ Ｘ</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr class="fitten-row-dark">
+                        <td class="fitten-cell-title">第五爻</td>
+                        <td class="fitten-cell-select">
+                            <select size="1" name="Y5">
+                                <option value="1" selected>少阳 ───</option>
+                                <option value="2">少阴 ─　─</option>
+                                <option value="3">老阳─── ○</option>
+                                <option value="4">老阴─　─ Ｘ</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr class="fitten-row-light">
+                        <td class="fitten-cell-title">第四爻</td>
+                        <td class="fitten-cell-select">
+                            <select size="1" name="Y4">
+                                <option value="1" selected>少阳 ───</option>
+                                <option value="2">少阴 ─　─</option>
+                                <option value="3">老阳─── ○</option>
+                                <option value="4">老阴─　─ Ｘ</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr class="fitten-row-dark">
+                        <td class="fitten-cell-title">第三爻</td>
+                        <td class="fitten-cell-select">
+                            <select size="1" name="Y3">
+                                <option value="1" selected>少阳 ───</option>
+                                <option value="2">少阴 ─　─</option>
+                                <option value="3">老阳─── ○</option>
+                                <option value="4">老阴─　─ Ｘ</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr class="fitten-row-light">
+                        <td class="fitten-cell-title">第二爻</td>
+                        <td class="fitten-cell-select">
+                            <select size="1" name="Y2">
+                                <option value="1" selected>少阳 ───</option>
+                                <option value="2">少阴 ─　─</option>
+                                <option value="3">老阳─── ○</option>
+                                <option value="4">老阴─　─ Ｘ</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr class="fitten-row-dark">
+                        <td class="fitten-cell-title">第一爻</td>
+                        <td class="fitten-cell-select">
+                            <select size="1" name="Y1">
+                                <option value="1" selected>少阳 ───</option>
+                                <option value="2">少阴 ─　─</option>
+                                <option value="3">老阳─── ○</option>
+                                <option value="4">老阴─　─ Ｘ</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div style="text-align: center">
+                <button id="fitten-add-case-content-btn">添加实例</button>
+            </div>
+        </dd>
+    </div>
+    <div style="position: relative; width: 100%; margin-top: 20px">
+        <div style="position: absolute; top: 0; left: 3%">
+            <div id="fitten-gua-container">
+                <canvas id="fitten-gua-canvas"></canvas>
+                <canvas id="fitten-hugua-canvas"></canvas>
+                <canvas id="fitten-biangua-canvas"></canvas>
+                <canvas id="fitten-cuogua-canvas"></canvas>
+                <canvas id="fitten-zonggua-canvas"></canvas>
+            </div>
+        </div>
+        <textarea id="fitten-case-content-textarea" style="
+          width: 100%;
+          height: 230px;
+          background: transparent;
+          position: relative;
+          z-index: 1;
+        " required></textarea>
+    </div>
+
+    <!-- 添加成功提示模态框 -->
+    <div id="fitten-successModal" class="fitten-modal" style="display: none">
+        <div class="fitten-modal-content">
+            <span class="fitten-close" onclick="closeSuccessModal()">&times;</span>
+            <h2>添加成功</h2>
+            <p>实例已成功添加！</p>
+        </div>
+    </div>
+
+    <!-- 解卦详情模态框 -->
+    <div id="fitten-myModal" class="fitten-modal">
+        <div class="fitten-modal-content">
+            <span class="fitten-close" onclick="closemyModal()">&times;</span>
+            <h2>解卦详情</h2>
+            <div style="display: flex; justify-content: center; align-items: center;border-bottom: 2px solid #ccc;">
+                占卜事件：<p id="fitten-modal-DivinationEvent"></p>
+                占卜时间：<p id="fitten-modal-DivinationDate"></p>
+            </div>
+            <div style="position: relative; display: flex; justify-content: center; align-items: center;background-color: #ffffff;">
+                <img id="fitten-modal-gua-image" src="" alt="卦象" width="220" height="200" />
+                <img id="fitten-modal-gua-image2" src="" alt="互卦" width="220" height="200" style="display: none" />
+                <img id="fitten-modal-gua-image3" src="" alt="变卦" width="220" height="200" style="display: none" />
+                <img id="fitten-modal-gua-image4" src="" alt="错卦" width="220" height="200" />
+                <img id="fitten-modal-gua-image5" src="" alt="综卦" width="220" height="200" />
+            </div>
+            <p id="fitten-modal-explanation"></p>
+        </div>
+    </div>
+
+    <!-- 删除占卜模态框 -->
+    <div id="fitten-confirmationModal" class="fitten-modal">
+        <div class="fitten-modal-case-content">
+            <p>确定要删除该占卜吗？</p>
+            <button id="fitten-confirmDelete">确定</button>
+            <button id="fitten-cancelDelete">取消</button>
+        </div>
+    </div>
+
+    <!-- 占卜事件和时间的模态框 -->
+    <div id="fitten-alertModal" class="fitten-modal" style="display: none;text-align: center;">
+        <div class="fitten-modal-content">
+            <h2 id="fitten-alertTitle">提示</h2>
+            <p id="fitten-alertMessage"></p>
+        </div>
+    </div>
+
+    <script>
+        let fittenCanvasHistory = []; // 声明一个全局变量
+        // 卦象名称映射
+        const fittenGuaNames = {
+            111111: "第一卦 乾为天",
+            "000000": "第二卦 坤为地",
+            "010001": "第三卦 水雷屯",
+            100010: "第四卦 山水蒙",
+            "010111": "第五卦 水天需",
+            111010: "第六卦 天水讼",
+            "000010": "第七卦 地水师",
+            "010000": "第八卦 水地比",
+            110111: "第九卦 风天小畜",
+            111011: "第十卦 天泽履",
+            "000111": "第十一卦 地天泰",
+            111000: "十二卦 地天否",
+            111101: "第十三卦 天火同人",
+            101111: "第十四卦 火天大有",
+            "000100": "第十五卦 地山谦",
+            "001000": "第十六卦 雷地豫",
+            "011001": "第十七卦 泽雷随",
+            100110: "第十八卦 山风蛊",
+            "000011": "第十九卦 地泽临",
+            110000: "第二十卦 风地观",
+            101001: "第二十一卦 火雷噬嗑",
+            100101: "第二十二卦 山火贲",
+            100000: "第二十三卦 山地剥",
+            "000001": "第二十四卦 地雷复",
+            111001: "第二十五卦 天雷无妄",
+            100111: "第二十六卦 山天大畜",
+            100001: "第二十七卦 山雷颐",
+            "011110": "第二十八卦 泽风大过",
+            "010010": "第二十九卦 坎为水",
+            101101: "第三十卦 离为火",
+            "011100": "第三十一卦 泽山咸",
+            "001110": "第三十二卦 雷风恒",
+            111100: "第三十三卦 天山遁",
+            "001111": "第三十四卦 雷天大壮",
+            101000: "第三十五卦 火地晋",
+            "000101": "第三十六卦 地火明夷",
+            110101: "第三十七卦 风火家人",
+            101011: "第三十八卦 火泽睽",
+            "010100": "第三十九卦 水山蹇",
+            "001010": "第四十卦 雷水解",
+            100011: "第四十一卦 山泽损",
+            110001: "第四十二卦 风雷益",
+            "011111": "第四十三卦 泽天夬",
+            111110: "第四十四卦 天风姤",
+            "011000": "第四十五卦 泽地萃",
+            "000110": "第四十六卦 地风升",
+            "011010": "第四十七卦 泽水困",
+            "010110": "第四十八卦 水风井",
+            "011101": "第四十九卦 泽火革",
+            101110: "第五十卦 火风鼎",
+            "001001": "第五十一卦 震为雷",
+            100100: "第五十二卦 艮为山",
+            110100: "第五十三卦 风山渐",
+            "001011": "第五十四卦 雷泽归妹",
+            "001101": "第五十五卦 雷火丰",
+            101100: "第五十六卦 火山旅",
+            110110: "第五十七卦 巽为风",
+            "011011": "第五十八卦 兑为泽",
+            110010: "第五十九卦 风水涣",
+            "010011": "第六十卦 水泽节",
+            110011: "第六十一卦 风泽中孚",
+            "001100": "第六十二卦 雷山小过",
+            "010101": "第六十三卦 水火既济",
+            101010: "第六十四卦 火水未济",
+        };
+
+        // 定义卦名映射
+        const fittenGuaMapping = {
+            111: "乾",
+            "011": "兑",
+            101: "离",
+            "001": "震",
+            110: "巽",
+            "010": "坎",
+            100: "艮",
+            "000": "坤",
+        };
+
+        const fittenYaoNames = ["上", "五", "四", "三", "二", "初"]; // 定义爻的名称
+        // 获取选中的爻状态
+        function getYaoValues() {
+            return [
+                document.querySelector('select[name="Y6"]').value,
+                document.querySelector('select[name="Y5"]').value,
+                document.querySelector('select[name="Y4"]').value,
+                document.querySelector('select[name="Y3"]').value,
+                document.querySelector('select[name="Y2"]').value,
+                document.querySelector('select[name="Y1"]').value,
+            ];
+        }
+
+        // 将爻值转为字符串，便于查找
+        function getYaoString(yaoValues) {
+            return yaoValues
+                .map((value) => (value === "1" || value === "3" ? "1" : "0"))
+                .join("");
+        }
+
+        // 绘制本卦
+        function drawGua() {
+            const canvas = document.getElementById("fitten-gua-canvas");
+            const ctx = canvas.getContext("2d");
+            const yaoValues = getYaoValues();
+            const lineOffset = 10;
+            canvas.width = 235;
+            canvas.height = 200;
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            // 绘制爻
+            yaoValues.forEach((value, index) => {
+                const yPosition = lineOffset + index * 30;
+                ctx.fillStyle = value === "1" || value === "2" ? "black" : "red";
+                if (value === "3") {
+                    drawSymbol(ctx, true, 200, yPosition + 5);
+                } else if (value === "4") {
+                    drawSymbol(ctx, false, 200, yPosition + 5);
+                }
+                ctx.fillRect(20, yPosition, 170, 10);
+                if (value === "2" || value === "4") {
+                    ctx.clearRect(20, yPosition, 170, 10);
+                    ctx.fillRect(20, yPosition, 70, 10);
+                    ctx.fillRect(120, yPosition, 70, 10);
+                }
+
+                // 添加爻的标注文字
+                let yaoLabel;
+                if (index === 0 || index === 5) {
+                    yaoLabel =
+                        fittenYaoNames[index] + (value === "1" || value === "3" ? "九" : "六");
+                } else {
+                    yaoLabel =
+                        (value === "1" || value === "3" ? "九" : "六") + fittenYaoNames[index];
+                }
+
+                ctx.fillStyle = "black";
+                ctx.font = "12px Arial";
+                ctx.textBaseline = "middle";
+                ctx.fillText(yaoLabel, 210, yPosition + 7); // 在右边绘制标注
+            });
+
+            // 获取卦名
+            const yaoString = getYaoString(yaoValues);
+            const guaName = fittenGuaNames[yaoString] || "(未知卦名)"; 
+
+            // 判断上下卦
+            const upperTrigram = yaoString.slice(0, 3);
+            const lowerTrigram = yaoString.slice(3, 6);
+            const upperGuaName = fittenGuaMapping[upperTrigram] || "(未知上卦)";
+            const lowerGuaName = fittenGuaMapping[lowerTrigram] || "(未知下卦)";
+
+            // 在画布下方绘制卦象名称
+            ctx.fillStyle = "black";
+            ctx.font = "15px Arial";
+            ctx.fillText(upperGuaName, 0, 45);
+            ctx.fillText(lowerGuaName, 0, 135);
+            ctx.fillText(guaName + "(本卦)", 25, 190);
+            return canvas.toDataURL();
+        }
+
+        // 绘制辅助符号，圆圈或叉叉
+        function drawSymbol(ctx, isCircle, x, y) {
+            ctx.fillStyle = "red"; 
+            ctx.strokeStyle = "red"; 
+            if (isCircle) {
+                ctx.beginPath();
+                ctx.arc(x, y, 5, 0, Math.PI * 2, true);
+                ctx.stroke(); 
+            } else {
+                ctx.beginPath();
+                ctx.moveTo(x - 5, y - 5);
+                ctx.lineTo(x + 5, y + 5);
+                ctx.moveTo(x + 5, y - 5);
+                ctx.lineTo(x - 5, y + 5);
+                ctx.stroke();
+            }
+        }
+
+        // 绘制互卦
+        function drawHugua() {
+            const canvas = document.getElementById("fitten-hugua-canvas");
+            const ctx = canvas.getContext("2d");
+
+            const yaoValues = [
+                document.querySelector('select[name="Y5"]').value,
+                document.querySelector('select[name="Y4"]').value,
+                document.querySelector('select[name="Y3"]').value,
+                document.querySelector('select[name="Y4"]').value,
+                document.querySelector('select[name="Y3"]').value,
+                document.querySelector('select[name="Y2"]').value,
+            ];
+            const lineOffset = 10; 
+            canvas.width = 235; 
+            canvas.height = 200; 
+            ctx.clearRect(0, 0, canvas.width, canvas.height); 
+
+            // 绘制每个新爻
+            yaoValues.forEach((value, index) => {
+                const yPosition = lineOffset + index * 30; 
+
+                ctx.fillStyle = "black";
+
+                ctx.fillRect(20, yPosition, 170, 10); 
+
+                if (value === "2" || value === "4") {
+                    ctx.clearRect(20, yPosition, 170, 10); 
+                    ctx.fillRect(20, yPosition, 70, 10); 
+                    ctx.fillRect(120, yPosition, 70, 10); 
+                }
+
+                // 添加爻的标注文字
+                let yaoLabel;
+                if (index === 0 || index === 5) {
+                    yaoLabel =
+                        fittenYaoNames[index] + (value === "1" || value === "3" ? "九" : "六");
+                } else {
+                    yaoLabel =
+                        (value === "1" || value === "3" ? "九" : "六") + fittenYaoNames[index];
+                }
+
+                ctx.fillStyle = "black"; 
+                ctx.font = "12px Arial"; 
+                ctx.textBaseline = "middle"; 
+                ctx.fillText(yaoLabel, 210, yPosition + 7); 
+            });
+
+            const yaoString = yaoValues
+                .map((value) => (value === "1" || value === "3" ? "1" : "0")) 
+                .join("");
+
+            const guaName = fittenGuaNames[yaoString] || "(未知卦名)"; 
+
+            const upperTrigram = yaoString.slice(0, 3); 
+            const lowerTrigram = yaoString.slice(3, 6); 
+            const upperGuaName = fittenGuaMapping[upperTrigram] || "(未知上卦)";
+            const lowerGuaName = fittenGuaMapping[lowerTrigram] || "(未知下卦)";
+
+            ctx.fillStyle = "black";
+            ctx.font = "15px Arial";
+            ctx.fillText(upperGuaName, 0, 45); 
+            ctx.fillText(lowerGuaName, 0, 135); 
+            ctx.fillText(guaName + "(互卦)", 25, 190); 
+            return canvas.toDataURL();
+        }
+
+        // 绘制变卦
+        function drawBiangua() {
+            const canvas = document.getElementById("fitten-biangua-canvas");
+            const ctx = canvas.getContext("2d");
+            const yaoValues = getYaoValues().map((value) =>
+                value === "3" ? "0" : value === "4" ? "1" : value
+            );
+            const lineOffset = 10; 
+            canvas.width = 235;
+            canvas.height = 200;
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            yaoValues.forEach((value, index) => {
+                const yPosition = lineOffset + index * 30; 
+                ctx.fillStyle = "black";
+                ctx.fillRect(20, yPosition, 170, 10); 
+                if (value === "0" || value === "2") {
+                    ctx.clearRect(20, yPosition, 170, 10);
+                    ctx.fillRect(20, yPosition, 70, 10); 
+                    ctx.fillRect(120, yPosition, 70, 10);
+                }
+
+                let yaoLabel;
+                if (index === 0 || index === 5) {
+                    yaoLabel =
+                        fittenYaoNames[index] + (value === "1" || value === "3" ? "九" : "六");
+                } else {
+                    yaoLabel =
+                        (value === "1" || value === "3" ? "九" : "六") + fittenYaoNames[index];
+                }
+
+                ctx.fillStyle = "black"; 
+                ctx.font = "12px Arial"; 
+                ctx.textBaseline = "middle"; 
+                ctx.fillText(yaoLabel, 210, yPosition + 7); 
+            });
+
+            const yaoString = getYaoString(yaoValues); 
+            const guaName = fittenGuaNames[yaoString] || "(未知卦名)"; 
+
+            const upperTrigram = yaoString.slice(0, 3); 
+            const lowerTrigram = yaoString.slice(3, 6); 
+            const upperGuaName = fittenGuaMapping[upperTrigram] || "(未知上卦)";
+            const lowerGuaName = fittenGuaMapping[lowerTrigram] || "(未知下卦)";
+
+            ctx.fillStyle = "black";
+            ctx.font = "15px Arial";
+            ctx.fillText(upperGuaName, 0, 45); 
+            ctx.fillText(lowerGuaName, 0, 135); 
+            ctx.fillText(guaName + "(变卦)", 25, 190); 
+            return canvas.toDataURL(); 
+        }
+
+        // 绘制错卦
+        function drawCuogua() {
+            const canvas = document.getElementById("fitten-cuogua-canvas");
+            const ctx = canvas.getContext("2d");
+            const yaoValues = getYaoValues().map((value) => {
+                if (value === "1" || value === "3") return "2"; 
+                if (value === "2" || value === "4") return "1"; 
+                return value; 
+            });
+            const lineOffset = 10; 
+            canvas.width = 235;
+            canvas.height = 200;
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            yaoValues.forEach((value, index) => {
+                const yPosition = lineOffset + index * 30; 
+                ctx.fillStyle = "black";
+                ctx.fillRect(20, yPosition, 170, 10); 
+                if (value === "0" || value === "2") {
+                    ctx.clearRect(20, yPosition, 170, 10);
+                    ctx.fillRect(20, yPosition, 70, 10); 
+                    ctx.fillRect(120, yPosition, 70, 10); 
+                }
+                let yaoLabel;
+                if (index === 0 || index === 5) {
+                    yaoLabel =
+                        fittenYaoNames[index] + (value === "1" || value === "3" ? "九" : "六");
+                } else {
+                    yaoLabel =
+                        (value === "1" || value === "3" ? "九" : "六") + fittenYaoNames[index];
+                }
+
+                ctx.fillStyle = "black"; 
+                ctx.font = "12px Arial"; 
+                ctx.textBaseline = "middle"; 
+                ctx.fillText(yaoLabel, 210, yPosition + 7); 
+            });
+
+            const yaoString = getYaoString(yaoValues); 
+            const guaName = fittenGuaNames[yaoString] || "(未知卦名)"; 
+
+            const upperTrigram = yaoString.slice(0, 3); 
+            const lowerTrigram = yaoString.slice(3, 6); 
+            const upperGuaName = fittenGuaMapping[upperTrigram] || "(未知上卦)";
+            const lowerGuaName = fittenGuaMapping[lowerTrigram] || "(未知下卦)";
+
+            ctx.fillStyle = "black";
+            ctx.font = "15px Arial";
+            ctx.fillText(upperGuaName, 0, 45); 
+            ctx.fillText(lowerGuaName, 0, 135); 
+            ctx.fillText(guaName + "(错卦)", 25, 190); 
+            return canvas.toDataURL(); 
+        }
+
+        // 绘制综卦
+        function drawZongGua() {
+            const canvas = document.getElementById("fitten-zonggua-canvas");
+            const ctx = canvas.getContext("2d");
+            const yaoValues = getYaoValues().reverse(); 
+            const lineOffset = 10; 
+            canvas.width = 235;
+            canvas.height = 200;
+            ctx.clearRect(0, 0, canvas.width, canvas.height); 
+
+            yaoValues.forEach((value, index) => {
+                const yPosition = lineOffset + index * 30; 
+                ctx.fillStyle = "black";
+                ctx.fillRect(20, yPosition, 170, 10); 
+                if (value === "2" || value === "4") {
+                    ctx.clearRect(20, yPosition, 170, 10); 
+                    ctx.fillRect(20, yPosition, 70, 10); 
+                    ctx.fillRect(120, yPosition, 70, 10); 
+                }
+                let yaoLabel;
+                if (index === 0 || index === 5) {
+                    yaoLabel =
+                        fittenYaoNames[index] + (value === "1" || value === "3" ? "九" : "六");
+                } else {
+                    yaoLabel =
+                        (value === "1" || value === "3" ? "九" : "六") + fittenYaoNames[index];
+                }
+
+                ctx.fillStyle = "black"; 
+                ctx.font = "12px Arial"; 
+                ctx.textBaseline = "middle"; 
+                ctx.fillText(yaoLabel, 210, yPosition + 7); 
+            });
+
+            const yaoString = getYaoString(yaoValues);
+            const guaName = fittenGuaNames[yaoString] || "(未知卦名)"; 
+
+            const upperTrigram = yaoString.slice(0, 3); 
+            const lowerTrigram = yaoString.slice(3, 6); 
+            const upperGuaName = fittenGuaMapping[upperTrigram] || "(未知上卦)";
+            const lowerGuaName = fittenGuaMapping[lowerTrigram] || "(未知下卦)";
+
+            ctx.fillStyle = "black";
+            ctx.font = "15px Arial";
+            ctx.fillText(upperGuaName, 0, 45); 
+            ctx.fillText(lowerGuaName, 0, 135); 
+            ctx.fillText(guaName + "(综卦)", 25, 190); 
+            return canvas.toDataURL(); 
+        }
+
+        // 保存卦象到 localStorage
+        function saveToLocalStorage(guaData) {
+            let fittenCanvasHistory =
+                JSON.parse(localStorage.getItem("fittenCanvasHistory")) || [];
+            fittenCanvasHistory.push(guaData);
+            fittenCanvasHistory.sort((a, b) => new Date(b.DivinationDate) - new Date(a.DivinationDate));
+            localStorage.setItem("fittenCanvasHistory", JSON.stringify(fittenCanvasHistory));
+        }
+
+        // 添加实例的事件处理
+        document.getElementById("fitten-add-case-content-btn").onclick = function () {
+            const textareaContent = document.getElementById(
+                "fitten-case-content-textarea"
+            ).value;
+            const DivinationDateValue = document.getElementById("fitten-Divination-Date").value; 
+            const DivinationEvent = document.getElementById("fitten-Divination-Event").value; 
+
+            if (!DivinationDateValue) {
+                showAlert("请填写占卜时间！");
+                return; 
+            }
+
+            if (!DivinationEvent) {
+                showAlert("请填写占卜事件！");
+                return; 
+            }
+
+            const guaData = {
+                gua: drawGua(),
+                cuogua: drawCuogua(),
+                zonggua: drawZongGua(),
+                content: textareaContent,
+                DivinationDate: DivinationDateValue,
+                DivinationEvent: DivinationEvent
+            };
+
+            if (getYaoValues().includes("3") || getYaoValues().includes("4")) {
+                guaData.biangua = drawBiangua(); 
+                document.getElementById("fitten-biangua-canvas").style.display = "block"; 
+                guaData.hugua = drawHugua(); 
+                document.getElementById("fitten-hugua-canvas").style.display = "block"; 
+            } else {
+                document.getElementById("fitten-biangua-canvas").style.display = "none"; 
+                document.getElementById("fitten-hugua-canvas").style.display = "none"; 
+            }
+
+            saveToLocalStorage(guaData);
+            loadCanvasFromLocalStorage(); 
+            showSuccessModal();
+            document.getElementById("fitten-case-content-textarea").value = "";
+        };
+
+        // 加载历史卦象并显示
+        function loadCanvasFromLocalStorage() {
+            const canvasGallery = document.getElementById("fitten-canvas-gallery");
+            const fittenCanvasHistory =
+                JSON.parse(localStorage.getItem("fittenCanvasHistory")) || [];
+            canvasGallery.innerHTML = ""; 
+
+            fittenCanvasHistory.forEach((data, index) => {
+                const instanceDiv = document.createElement("fieldset");
+                instanceDiv.classList.add("fitten-canvas-container");
+                instanceDiv.id = `fitten-instance-${index}`;
+
+                const guaImg = document.createElement("img");
+                guaImg.src = data.gua; 
+                instanceDiv.appendChild(guaImg); 
+
+                if (data.hugua) {
+                    const huguaImg = document.createElement("img");
+                    huguaImg.src = data.hugua; 
+                    instanceDiv.appendChild(huguaImg);
+                }
+
+                if (data.biangua) {
+                    const bianguaImg = document.createElement("img");
+                    bianguaImg.src = data.biangua; 
+                    instanceDiv.appendChild(bianguaImg);
+                }
+
+                if (data.cuogua) {
+                    const cuoguaImg = document.createElement("img");
+                    cuoguaImg.src = data.cuogua; 
+                    instanceDiv.appendChild(cuoguaImg);
+                }
+
+                if (data.zonggua) {
+                    const zongguaImg = document.createElement("img");
+                    zongguaImg.src = data.zonggua; 
+                    instanceDiv.appendChild(zongguaImg);
+                }
+                instanceDiv.innerHTML += `<legend>占卜时间: ${data.DivinationDate}|| 占卜事件: ${data.DivinationEvent}</legend><p style="display: none;"><br>${data.content.replace(
+                    /\n/g,
+                    "<br>"
+                )}</p><br>`; 
+
+                const explainDetailBtn = document.createElement("p");
+                explainDetailBtn.className = "fitten-canvas-detail-btn";
+                explainDetailBtn.innerText = "查看解卦详情";
+                explainDetailBtn.onclick = function () {
+                    showModal(
+                        data.DivinationEvent,
+                        data.DivinationDate,
+                        data.gua,
+                        data.hugua ? data.hugua : null, 
+                        data.biangua ? data.biangua : null, 
+                        data.cuogua,
+                        data.zonggua,
+                        data.content.replace(/\n/g, "<br>").replace(/ /g, '&nbsp;&nbsp;')
+                    ); 
+                };
+
+                const deletecaseBtn = document.createElement("p");
+                deletecaseBtn.className = "fitten-canvas-delete-case-btn";
+                deletecaseBtn.innerText = "删除该占卜";
+                deletecaseBtn.onclick = (function (data) {
+                    return function () {
+                        showConfirmationModal(data);
+                    };
+                })(data);
+
+                instanceDiv.appendChild(explainDetailBtn); 
+                instanceDiv.appendChild(deletecaseBtn); 
+                canvasGallery.appendChild(instanceDiv); 
+            });
+            initConfirmationModal();
+
+            const fittenDivinationExamplesbox = document.getElementById("fitten-divination-examples-container");
+            fittenDivinationExamplesbox.style.display = "block";
+        }
+        
+        function showAlert(message) {
+            document.getElementById("fitten-alertMessage").innerText = message; 
+            document.getElementById("fitten-alertModal").style.display = "block"; 
+            setTimeout(closeAlertModal, 1000); 
+        }
+
+        function closeAlertModal() {
+            document.getElementById("fitten-alertModal").style.display = "none"; 
+        }
+
+        function showSuccessModal() {
+            document.getElementById("fitten-successModal").style.display = "block"; 
+            setTimeout(closeSuccessModal, 1000); 
+        }
+
+        function closeSuccessModal() {
+            document.getElementById("fitten-successModal").style.display = "none"; 
+        }
+
+        function showModal(
+            DivinationEvent,
+            DivinationDate,
+            guaImgSrc,
+            guaImgSrc2,
+            guaImgSrc3,
+            guaImgSrc4,
+            guaImgSrc5,
+            explanation
+        ) {
+            document.getElementById("fitten-modal-DivinationEvent").innerHTML = DivinationEvent;
+            document.getElementById("fitten-modal-DivinationDate").innerHTML = DivinationDate;
+            document.getElementById("fitten-modal-gua-image").src = guaImgSrc; 
+            const modalGuaImage2 = document.getElementById("fitten-modal-gua-image2");
+            const modalGuaImage3 = document.getElementById("fitten-modal-gua-image3");
+            document.getElementById("fitten-modal-gua-image4").src = guaImgSrc4; 
+            document.getElementById("fitten-modal-gua-image5").src = guaImgSrc5; 
+            if (guaImgSrc2) {
+                modalGuaImage2.src = guaImgSrc2; 
+                modalGuaImage2.style.display = "block"; 
+            } else {
+                modalGuaImage2.style.display = "none"; 
+            }
+
+            if (guaImgSrc3) {
+                modalGuaImage3.src = guaImgSrc3; 
+                modalGuaImage3.style.display = "block"; 
+            } else {
+                modalGuaImage3.style.display = "none"; 
+            }
+
+            document.getElementById("fitten-modal-explanation").innerHTML = explanation; 
+            document.getElementById("fitten-myModal").style.display = "block"; 
+            document.body.classList.add("no-scroll"); 
+        }
+
+        function closemyModal() {
+            document.getElementById("fitten-myModal").style.display = "none"; 
+            document.body.classList.remove("no-scroll"); 
+        }
+
+        function closeModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.style.display = "none"; 
+            }
+        }
+
+        window.onclick = function (event) {
+            const modals = ["fitten-successModal", "fitten-myModal", "fitten-alertModal"];
+            modals.forEach((modalId) => {
+                const modal = document.getElementById(modalId);
+                if (event.target === modal) {
+                    closeModal(modalId); 
+                }
+            });
+        };
+
+        let currentData;
+        function showConfirmationModal(data) {
+            currentData = data; 
+            const confirmationModal = document.getElementById("fitten-confirmationModal");
+            confirmationModal.style.display = "block";
+        }
+
+        function initConfirmationModal() {
+            const confirmationModal = document.getElementById("fitten-confirmationModal");
+            const confirmDeleteButton = document.getElementById("fitten-confirmDelete");
+            const cancelDeleteButton = document.getElementById("fitten-cancelDelete");
+
+            function hideConfirmationModal() {
+                confirmationModal.style.display = "none";
+            }
+
+            confirmDeleteButton.onclick = function () {
+                hideConfirmationModal();
+                if (currentData) {
+                    const fittenCanvasHistory = 
+                        JSON.parse(localStorage.getItem("fittenCanvasHistory")) || [];
+                    const index = fittenCanvasHistory.findIndex(
+                        (item) =>
+                            item.gua === currentData.gua &&
+                            item.hugua === currentData.hugua &&
+                            item.biangua === currentData.biangua &&
+                            item.content === currentData.content
+                    );
+                    if (index !== -1) {
+                        fittenCanvasHistory.splice(index, 1); 
+                        localStorage.setItem(
+                            "fittenCanvasHistory",
+                            JSON.stringify(fittenCanvasHistory)
+                        ); 
+                        loadCanvasFromLocalStorage(); 
+                    }
+                }
+            };
+
+            cancelDeleteButton.onclick = function () {
+                hideConfirmationModal();
+            };
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const selectElements = document.querySelectorAll('select[name^="Y"]');
+
+            selectElements.forEach((selectElement) => {
+                selectElement.addEventListener("change", updateGua);
+            });
+
+            updateGua();
+        });
+
+        function updateGua() {
+            const yaoValues = getYaoValues();
+            drawGua(); 
+            drawCuogua(); 
+            drawZongGua(); 
+            if (yaoValues.includes("3") || yaoValues.includes("4")) {
+                drawBiangua(); 
+                drawHugua(); 
+                document.getElementById("fitten-biangua-canvas").style.display = "block";
+                document.getElementById("fitten-hugua-canvas").style.display = "block";
+            } else {
+                document.getElementById("fitten-biangua-canvas").style.display = "none"; 
+                document.getElementById("fitten-hugua-canvas").style.display = "none"; 
+            }
+        }
+
+        window.onload = function () {
+            loadCanvasFromLocalStorage();
+        };
+
+        function setTodayDate() {
+            const today = new Date(); 
+            const year = today.getFullYear();
+            const month = String(today.getMonth() + 1).padStart(2, '0'); 
+            const day = String(today.getDate()).padStart(2, '0'); 
+            const todayString = `${year}-${month}-${day}`; 
+
+            document.getElementById("fitten-Divination-Date").value = todayString;
+            document.getElementById("fitten-search-date").value = todayString;
+        }
+
+        setTodayDate(); 
+
+        document.getElementById("fitten-case-content-textarea").addEventListener("keydown", function (event) {
+            if (event.key === "Tab") {
+                event.preventDefault();
+                const start = this.selectionStart;
+                const end = this.selectionEnd;
+
+                this.value = this.value.substring(0, start) + "    " + this.value.substring(end);
+                this.selectionStart = this.selectionEnd = start + 1;
+            }
+        });
+
+        function searchDivinationExamples() {
+            const searchDate = document.getElementById("fitten-search-date").value;
+            const fittenDivinationExamplesbox = document.getElementById("fitten-divination-examples-container");
+            fittenDivinationExamplesbox.style.display = "block";
+
+            const fittenCanvasHistory = JSON.parse(localStorage.getItem("fittenCanvasHistory")) || [];
+            let found = false; 
+            for (let index = 0; index < fittenCanvasHistory.length; index++) {
+                if (fittenCanvasHistory[index].DivinationDate === searchDate) {
+                    const instanceDiv = document.getElementById(`fitten-instance-${index}`);
+                    if (instanceDiv) {
+                        instanceDiv.scrollIntoView({ behavior: 'smooth' }); 
+                        found = true; 
+                        break; 
+                    }
+                }
+            }
+
+            if (!found) {
+                showAlert("占卜实例不存在，请先添加！"); 
+                setTimeout(closeAlertModal, 1000); 
+                return; 
+            }
+        }
+
+        function closeSearchDivinationExamples() {
+            const fittenDivinationExamplesbox = document.getElementById("fitten-divination-examples-container");
+            fittenDivinationExamplesbox.style.display = "none";
+        }
+
+    </script>
+</body>
+
+</html>
+</div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div><div class="comment-switch"><span class="first-comment">Valine</span><span id="switch-btn"></span><span class="second-comment">Disqus</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div><div><div id="disqus_thread"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info is-center"><div class="avatar-img"><img src="/./images/%E5%B0%8F%E7%86%8A.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">一粒红尘</div><div class="author-info-description">这是一粒红尘的博客，主要是记录生活和学习中的随笔，主要的内容是技术、生活、读书、音乐、历史、写作等。</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">2</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">7</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><a id="card-info-btn" href="https://github.com/qiminzidu"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/qiminzidu" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:xxxxxx@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">应有所住，而生其心！</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#fitten-case-content-title"><span class="toc-number">1.</span> <span class="toc-text">占卜实例</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#fitten-Search-divination-examples"><span class="toc-number">1.1.</span> <span class="toc-text">占卜实例搜索</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#fitten-divination-examples-container"><span class="toc-number">1.2.</span> <span class="toc-text">占卜实例列表</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#fitten-yg5"><span class="toc-number">1.3.</span> <span class="toc-text">占卜实例添加</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#fitten-successModal"><span class="toc-number"></span> <span class="toc-text">添加成功</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#fitten-myModal"><span class="toc-number"></span> <span class="toc-text">解卦详情</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#fitten-alertTitle"><span class="toc-number"></span> <span class="toc-text">提示</span></a></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2024/09/30/%E5%85%B3%E4%BA%8E%20hexo%20%E4%B8%BB%E9%A2%98%20butterfly%20%E7%9A%84%20Local%20Search%20%E9%85%8D%E7%BD%AE%E9%97%AE%E9%A2%98/" title="关于hexo主题butterfly的Local Search配置问题"><img src="https://jsd.012700.xyz/gh/jerryc127/CDN@latest/cover/default_bg.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="关于hexo主题butterfly的Local Search配置问题"/></a><div class="content"><a class="title" href="/2024/09/30/%E5%85%B3%E4%BA%8E%20hexo%20%E4%B8%BB%E9%A2%98%20butterfly%20%E7%9A%84%20Local%20Search%20%E9%85%8D%E7%BD%AE%E9%97%AE%E9%A2%98/" title="关于hexo主题butterfly的Local Search配置问题">关于hexo主题butterfly的Local Search配置问题</a><time datetime="2024-09-30T03:57:23.000Z" title="发表于 2024-09-30 11:57:23">2024-09-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2017/07/08/hello-world/" title="Hello World"><img src="https://jsd.012700.xyz/gh/jerryc127/CDN@latest/cover/default_bg.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World"/></a><div class="content"><a class="title" href="/2017/07/08/hello-world/" title="Hello World">Hello World</a><time datetime="2017-07-07T16:00:00.000Z" title="发表于 2017-07-08 00:00:00">2017-07-08</time></div></div></div></div><div class="card-widget" id="card-newest-comments"><div class="item-headline"><i class="fas fa-comment-dots"></i><span>最新评论</span></div><div class="aside-list"><span>加载中...</span></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            
+          </div>
+          <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/hexo/"><span class="card-category-list-name">hexo</span><span class="card-category-list-count">2</span></a><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/hexo/butterfly/"><span class="card-category-list-name">butterfly</span><span class="card-category-list-count">1</span></a><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/hexo/butterfly/%E9%85%8D%E7%BD%AE/"><span class="card-category-list-name">配置</span><span class="card-category-list-count">1</span></a></li></ul></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/hexo/%E9%85%8D%E7%BD%AE/"><span class="card-category-list-name">配置</span><span class="card-category-list-count">1</span></a></li></ul></li>
+          </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/blog/" style="font-size: 1.1em; color: #999">blog</a> <a href="/tags/hexo/" style="font-size: 1.5em; color: #99a9bf">hexo</a> <a href="/tags/%E6%90%9C%E7%B4%A2/" style="font-size: 1.1em; color: #999">搜索</a> <a href="/tags/%E6%8A%80%E6%9C%AF/" style="font-size: 1.1em; color: #999">技术</a> <a href="/tags/butterfly/" style="font-size: 1.1em; color: #999">butterfly</a> <a href="/tags/local-search/" style="font-size: 1.1em; color: #999">local search</a> <a href="/tags/%E9%85%8D%E7%BD%AE/" style="font-size: 1.1em; color: #999">配置</a></div></div><div class="card-widget card-archives">
+    <div class="item-headline">
+      <i class="fas fa-archive"></i>
+      <span>归档</span>
+      
+    </div>
+    <ul class="card-archive-list">
+  
+      <li class="card-archive-list-item">
+        <a class="card-archive-list-link" href="/archives/2024/09/">
+          <span class="card-archive-list-date">九月 2024</span>
+          <span class="card-archive-list-count">1</span>
+        </a>
+      </li>
+    
+      <li class="card-archive-list-item">
+        <a class="card-archive-list-link" href="/archives/2017/07/">
+          <span class="card-archive-list-date">七月 2017</span>
+          <span class="card-archive-list-count">1</span>
+        </a>
+      </li>
+    </ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站信息</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">2</div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">526</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总浏览量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2024-09-30T06:57:39.407Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2024 By 一粒红尘</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="前往评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>(() => {
+  const panguFn = () => {
+    if (typeof pangu === 'object') pangu.autoSpacingPage()
+    else {
+      btf.getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+        .then(() => {
+          pangu.autoSpacingPage()
+        })
+    }
+  }
+
+  const panguInit = () => {
+    if (false){
+      GLOBAL_CONFIG_SITE.isPost && panguFn()
+    } else {
+      panguFn()
+    }
+  }
+
+  btf.addGlobalFn('pjaxComplete', panguInit, 'pangu')
+  document.addEventListener('DOMContentLoaded', panguInit)
+})()</script><div class="js-pjax"><script>(() => {
+  const initValine = () => {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: 'CiT3hM0pyaDR69TPtinWtOep-gzGzoHsz',
+      appKey: '73b1P4wE7ADkHzocxIbDm3r6',
+      avatar: 'monsterid',
+      serverURLs: '',
+      emojiMaps: "",
+      path: window.location.pathname,
+      visitor: false
+    }, null))
+  }
+
+  const loadValine = async () => {
+    if (typeof Valine === 'function') initValine()
+    else {
+      await btf.getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js')
+      initValine()
+    }
+  }
+
+  if ('Valine' === 'Valine' || !false) {
+    if (false) btf.loadComment(document.getElementById('vcomment'),loadValine)
+    else setTimeout(loadValine, 0)
+  } else {
+    window.loadOtherComment = loadValine
+  }
+})()</script><script>(() => {
+  const disqus_config = function () {
+    this.page.url = 'https://github.com/qiminzidu/MyStudy.github.io/%E6%98%93%E7%BB%8F%E5%8D%A0%E5%8D%9C%E5%AE%9E%E4%BE%8B%E6%B7%BB%E5%8A%A0'
+    this.page.identifier = '/%E6%98%93%E7%BB%8F%E5%8D%A0%E5%8D%9C%E5%AE%9E%E4%BE%8B%E6%B7%BB%E5%8A%A0'
+    this.page.title = ''
+  }
+
+  const disqusReset = () => {
+    window.DISQUS && window.DISQUS.reset({
+      reload: true,
+      config: disqus_config
+    })
+  }
+
+  btf.addGlobalFn('themeChange', disqusReset, 'disqus')
+
+  const loadDisqus = () =>{
+    if (window.DISQUS) disqusReset()
+    else {
+      const script = document.createElement('script')
+      script.src = 'https://.disqus.com/embed.js'
+      script.setAttribute('data-timestamp', +new Date())
+      document.head.appendChild(script)
+    }
+  }
+
+  const getCount = async() => {
+    try {
+      const eleGroup = document.querySelector('#post-meta .disqus-comment-count')
+      if (!eleGroup) return
+      const cleanedLinks = eleGroup.href.replace(/#post-comment$/, '')
+
+      const res = await fetch(`https://disqus.com/api/3.0/threads/set.json?forum=&api_key=&thread:link=${cleanedLinks}`,{
+        method: 'GET'
+      })
+      const result = await res.json()
+
+      const count = result.response.length ? result.response[0].posts : 0
+      eleGroup.textContent = count
+    } catch (err) {
+      console.error(err)
+    }
+  }
+
+  if ('Valine' === 'Disqus' || !false) {
+    if (false) btf.loadComment(document.getElementById('disqus_thread'), loadDisqus)
+    else {
+      loadDisqus()
+      GLOBAL_CONFIG_SITE.isPost && getCount()
+    }
+  } else {
+    window.loadOtherComment = loadDisqus
+  }
+})()</script></div><script src="https://cdn.jsdelivr.net/npm/blueimp-md5/js/md5.min.js"></script><script>window.newestComments = {
+  changeContent: content => {
+    if (content === '') return content
+
+    content = content.replace(/<img.*?src="(.*?)"?[^\>]+>/ig, '[图片]') // replace image link
+    content = content.replace(/<a[^>]+?href=["']?([^"']+)["']?[^>]*>([^<]+)<\/a>/gi, '[链接]') // replace url
+    content = content.replace(/<pre><code>.*?<\/pre>/gi, '[代码]') // replace code
+    content = content.replace(/<code>.*?<\/code>/gi, '[代码]') // replace code      
+    content = content.replace(/<[^>]+>/g, "") // remove html tag
+
+    if (content.length > 150) {
+      content = content.substring(0, 150) + '...'
+    }
+    return content
+  },
+
+  generateHtml: (array, ele) => {
+    let result = ''
+
+    if (array.length) {
+      for (let i = 0; i < array.length; i++) {
+        result += '<div class="aside-list-item">'
+
+        if (true && array[i].avatar) {
+          const imgAttr = 'src'
+          result += `<a href="${array[i].url}" class="thumbnail"><img ${imgAttr}="${array[i].avatar}" alt="${array[i].nick}"></a>`
+        }
+
+        result += `<div class="content">
+        <a class="comment" href="${array[i].url}" title="${array[i].content}">${array[i].content}</a>
+        <div class="name"><span>${array[i].nick} / </span><time datetime="${array[i].date}">${btf.diffDate(array[i].date, true)}</time></div>
+        </div></div>`
+      }
+    } else {
+      result += '暂无评论'
+    }
+
+    ele.innerHTML = result
+    window.lazyLoadInstance && window.lazyLoadInstance.update()
+    window.pjax && window.pjax.refresh(ele)
+  },
+
+  newestCommentInit: (name, getComment) => {
+    const $dom = document.querySelector('#card-newest-comments .aside-list')
+    if ($dom) {
+      const data = btf.saveToLocal.get(name)
+      if (data) {
+        newestComments.generateHtml(JSON.parse(data), $dom)
+      } else {
+        getComment($dom)
+      }
+    }
+  },
+
+  run: (name, getComment) => {
+    newestComments.newestCommentInit(name, getComment)
+    btf.addGlobalFn('pjaxComplete', () => newestComments.newestCommentInit(name, getComment), name)
+  }
+}</script><script>window.addEventListener('load', () => {
+  const keyName = 'valine-newest-comments'
+  const { changeContent, generateHtml, run } = window.newestComments
+
+  const getIcon = (icon, mail) => {
+    if (icon) return icon
+    let defaultIcon = '?d=monsterid'
+    let iconUrl = `https://gravatar.loli.net/avatar/${md5(mail.toLowerCase()) + defaultIcon}`
+    return iconUrl
+  }
+
+  const getComment = ele => {
+    const serverURL = 'https://CiT3hM0p.api.lncldglobal.com'
+
+    var settings = {
+      "method": "GET",
+      "headers": {
+        "X-LC-Id": 'CiT3hM0pyaDR69TPtinWtOep-gzGzoHsz',
+        "X-LC-Key": '73b1P4wE7ADkHzocxIbDm3r6',
+        "Content-Type": "application/json"
+      },
+    }
+
+    fetch(`${serverURL}/1.1/classes/Comment?limit=6&order=-createdAt`,settings)
+      .then(response => response.json())
+      .then(data => {
+        const valineArray = data.results.map(e => {
+          return {
+            'avatar': getIcon(e.QQAvatar, e.mail),
+            'content': changeContent(e.comment),
+            'nick': e.nick,
+            'url': e.url + '#' + e.objectId,
+            'date': e.updatedAt,
+          }
+        })
+        btf.saveToLocal.set(keyName, JSON.stringify(valineArray), 10/(60*24))
+        generateHtml(valineArray, ele)
+      }).catch(e => {
+        console.error(e)
+        ele.textContent= "无法获取评论，请确认相关配置是否正确"
+      })
+  }
+
+  run(keyName, getComment)
+})</script><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/fireworks.min.js"></script><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="true"></script><script defer="defer" id="fluttering_ribbon" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-fluttering-ribbon.min.js"></script><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-nest.min.js"></script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-show-text.min.js" data-mobile="false" data-text="富强,民主,文明,和谐,自由,平等,公正,法治,爱国,敬业,诚信,友善" data-fontsize="15px" data-random="false" async="async"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>(() => {
+  const pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+  window.pjax = new Pjax({
+    elements: 'a:not([target="_blank"])',
+    selectors: pjaxSelectors,
+    cacheBust: false,
+    analytics: false,
+    scrollRestoration: false
+  })
+
+  const triggerPjaxFn = (val) => {
+    if (!val) return
+    Object.values(val).forEach(fn => fn())
+  }
+
+  document.addEventListener('pjax:send', () => {
+    // removeEventListener
+    btf.removeGlobalFnEvent('pjaxSendOnce')
+    btf.removeGlobalFnEvent('themeChange')
+
+    // reset readmode
+    const $bodyClassList = document.body.classList
+    if ($bodyClassList.contains('read-mode')) $bodyClassList.remove('read-mode')
+
+    triggerPjaxFn(window.globalFn.pjaxSend)
+  })
+
+  document.addEventListener('pjax:complete', () => {
+    btf.removeGlobalFnEvent('pjaxCompleteOnce')
+    document.querySelectorAll('script[data-pjax]').forEach(item => {
+      const newScript = document.createElement('script')
+      const content = item.text || item.textContent || item.innerHTML || ""
+      Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+      newScript.appendChild(document.createTextNode(content))
+      item.parentNode.replaceChild(newScript, item)
+    })
+
+    triggerPjaxFn(window.globalFn.pjaxComplete)
+  })
+
+  document.addEventListener('pjax:error', e => {
+    if (e.request.status === 404) {
+      pjax.loadUrl('/404')
+    }
+  })
+})()</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章……" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div></body></html>

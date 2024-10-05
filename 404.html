@@ -166,7 +166,7 @@ btf.addGlobalFn('pjaxComplete', () => {
   isHome: false,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2024-10-05 22:29:36'
+  postUpdate: '2024-10-05 23:28:42'
 }</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><script>(()=>{
   const $loadingBox = document.getElementById('loading-box')
   const $body = document.body
@@ -307,7 +307,7 @@ btf.addGlobalFn('pjaxComplete', () => {
   }
 
   const getComment = ele => {
-    const serverURL = 'https://CiT3hM0p.api.lncldglobal.com'
+    const serverURL = 'https://cit3hm0p.lc-cn-n1-shared.com'
 
     var settings = {
       "method": "GET",
@@ -343,7 +343,7 @@ btf.addGlobalFn('pjaxComplete', () => {
   const pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
 
   window.pjax = new Pjax({
-    elements: 'a:not([target="_blank"])',
+    elements: 'a:not([target="_blank"]):not([href="/movies/"]):not([href="/books/"]):not([href="/games/"])',
     selectors: pjaxSelectors,
     cacheBust: false,
     analytics: true,

@@ -318,7 +318,7 @@ btf.addGlobalFn('pjaxComplete', () => {
       appId: 'CiT3hM0pyaDR69TPtinWtOep-gzGzoHsz',
       appKey: '73b1P4wE7ADkHzocxIbDm3r6',
       avatar: 'monsterid',
-      serverURLs: '',
+      serverURLs: 'https://cit3hm0p.lc-cn-n1-shared.com',
       emojiMaps: "",
       path: window.location.pathname,
       visitor: true
@@ -462,7 +462,7 @@ btf.addGlobalFn('pjaxComplete', () => {
   }
 
   const getComment = ele => {
-    const serverURL = 'https://CiT3hM0p.api.lncldglobal.com'
+    const serverURL = 'https://cit3hm0p.lc-cn-n1-shared.com'
 
     var settings = {
       "method": "GET",
@@ -498,7 +498,7 @@ btf.addGlobalFn('pjaxComplete', () => {
   const pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
 
   window.pjax = new Pjax({
-    elements: 'a:not([target="_blank"])',
+    elements: 'a:not([target="_blank"]):not([href="/movies/"]):not([href="/books/"]):not([href="/games/"])',
     selectors: pjaxSelectors,
     cacheBust: false,
     analytics: true,

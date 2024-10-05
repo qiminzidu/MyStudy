@@ -4,6 +4,39 @@
   
     
     <entry>
+      <title>关于将hexo部署到GitHub的教程&lt;收藏&gt;</title>
+      <link href="/2024/10/05/%E5%85%B3%E4%BA%8E%E5%B0%86hexo%E9%83%A8%E7%BD%B2%E5%88%B0GitHub%E7%9A%84%E6%95%99%E7%A8%8B-%E6%94%B6%E8%97%8F/"/>
+      <url>/2024/10/05/%E5%85%B3%E4%BA%8E%E5%B0%86hexo%E9%83%A8%E7%BD%B2%E5%88%B0GitHub%E7%9A%84%E6%95%99%E7%A8%8B-%E6%94%B6%E8%97%8F/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="安装必要环境"><a href="#安装必要环境" class="headerlink" title="安装必要环境"></a>安装必要环境</h1><h2 id="1-安装-Nodejs，Hexo是基于-Node-js-驱动的一款博客框架。"><a href="#1-安装-Nodejs，Hexo是基于-Node-js-驱动的一款博客框架。" class="headerlink" title="1. 安装 Nodejs，Hexo是基于 Node.js 驱动的一款博客框架。"></a>1. 安装 Nodejs，Hexo是基于 Node.js 驱动的一款博客框架。</h2><p><a href="https://nodejs.cn/">Node.js下载地址</a></p><h2 id="2-安装-Git，一个分布式版本控制系统，用于项目的版本控制管理。"><a href="#2-安装-Git，一个分布式版本控制系统，用于项目的版本控制管理。" class="headerlink" title="2. 安装 Git，一个分布式版本控制系统，用于项目的版本控制管理。"></a>2. 安装 Git，一个分布式版本控制系统，用于项目的版本控制管理。</h2><p><a href="https://git-scm.com/">Git下载地址</a><br><a href="https://gitforwindows.org/">Git for Windows下载地址</a><br>注：如果以上速度慢，可以使用镜像源。<br><a href="https://registry.npmmirror.com/binary.html?path=git-for-windows/">阿里镜像：CNPM Binaries Mirror</a></p><h3 id="下载完成之后："><a href="#下载完成之后：" class="headerlink" title="下载完成之后："></a>下载完成之后：</h3><ul><li>如有需要，可以右击此电脑&gt;属性&gt;高级系统设置&gt;环境变量&gt;系统变量下的Path 可以看到两者已自动修改了环境变量。</li></ul><h4 id="检查是否安装成功：我们可以通过cmd命令（win-r后输入cmd）查看，如果出现版本号，则安装成功。"><a href="#检查是否安装成功：我们可以通过cmd命令（win-r后输入cmd）查看，如果出现版本号，则安装成功。" class="headerlink" title="检查是否安装成功：我们可以通过cmd命令（win+r后输入cmd）查看，如果出现版本号，则安装成功。"></a>检查是否安装成功：我们可以通过cmd命令（win+r后输入cmd）查看，如果出现版本号，则安装成功。</h4><ul><li>查看Node.js版本命令：  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node -v </span><br></pre></td></tr></table></figure></li><li>查看Git版本命令：  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git --version</span><br></pre></td></tr></table></figure></li></ul><h2 id="3-注册GitHub账号并且创建仓库"><a href="#3-注册GitHub账号并且创建仓库" class="headerlink" title="3. 注册GitHub账号并且创建仓库"></a>3. 注册GitHub账号并且创建仓库</h2><p><a href="https://github.com/" target="_blank">[GitHub注册地址]</a><br>注：如果网页打不开，需要翻墙<br>具体操作可参考：<a href="https://blog.csdn.net/weixin_43758272/article/details/142111346#:~:text=%E5%9C%A8%E8%BF%99%E4%B8%AA%E6%95%99%E7%A8%8B%E4%B8%AD">GitHub注册及创建仓库教程</a><br>注：注意仓库的取名格式：用户名.github.io(这将是以后的访问域名)</p><h2 id="3-本地配置安装Hexo"><a href="#3-本地配置安装Hexo" class="headerlink" title="3. 本地配置安装Hexo"></a>3. 本地配置安装Hexo</h2><h3 id="首先在磁盘中创建一个用来存放Github本地仓库文件的目录blog-可自定义目录存放"><a href="#首先在磁盘中创建一个用来存放Github本地仓库文件的目录blog-可自定义目录存放" class="headerlink" title="首先在磁盘中创建一个用来存放Github本地仓库文件的目录blog(可自定义目录存放)"></a>首先在磁盘中创建一个用来存放Github本地仓库文件的目录blog(可自定义目录存放)</h3><h3 id="进入该目录，在终端中执行如下命令，完成Hexo的安装与初始化："><a href="#进入该目录，在终端中执行如下命令，完成Hexo的安装与初始化：" class="headerlink" title="进入该目录，在终端中执行如下命令，完成Hexo的安装与初始化："></a>进入该目录，在终端中执行如下命令，完成Hexo的安装与初始化：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g <span class="comment"># 此命令完成对 hexo 的安装</span></span><br><span class="line">hexo init <span class="comment"># 该命令完成 hexo 在本地博客目录的初始化</span></span><br></pre></td></tr></table></figure><h3 id="生成静态页面："><a href="#生成静态页面：" class="headerlink" title="生成静态页面："></a>生成静态页面：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g <span class="comment"># 该命令完成 hexo 在本地博客目录的静态页面生成</span></span><br></pre></td></tr></table></figure><p>注：执行以上命令后，Hexo 就会在 public 文件夹中生成相关的 html 文件</p><h3 id="启动本地预览："><a href="#启动本地预览：" class="headerlink" title="启动本地预览："></a>启动本地预览：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s <span class="comment"># 该命令完成 hexo 在本地博客目录的本地服务器启动</span></span><br></pre></td></tr></table></figure><p>注：执行以上命令后，Hexo 会在本地启动一个服务器，默认端口为 4000，访问 <a href="http://localhost:4000/">http://localhost:4000</a> 即可看到本地博客的效果。</p><h3 id="上传到GitHub："><a href="#上传到GitHub：" class="headerlink" title="上传到GitHub："></a>上传到GitHub：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d <span class="comment"># 该命令完成 hexo 在本地博客目录的静态页面生成并上传到 GitHub</span></span><br></pre></td></tr></table></figure><p>不过，在执行以上命令之前，需要在 Hexo 的 _config.yml 文件中进行一些配置。</p><ol><li>在 _config.yml 文件中添加如下配置：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/one-command-deployment</span></span><br><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: git@github.com:username/username.github.io.git</span><br><span class="line">  branch: mian <span class="comment"># 注意修改为你自己的分支名</span></span><br></pre></td></tr></table></figure></li><li>安装插件<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save <span class="comment"># 安装部署插件</span></span><br><span class="line">$ hexo d <span class="comment"># 执行部署命令</span></span><br></pre></td></tr></table></figure></li><li>部署成功后，访问 <a href="http://username.github.io/">http://username.github.io</a> 即可看到部署后的博客效果。</li></ol><h2 id="如果想要修改博客主题，可以参考：Hexo官方文档"><a href="#如果想要修改博客主题，可以参考：Hexo官方文档" class="headerlink" title="如果想要修改博客主题，可以参考：Hexo官方文档"></a>如果想要修改博客主题，可以参考：<a href="https://hexo.io/docs/">Hexo官方文档</a></h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> 建站小记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> butterfly </tag>
+            
+            <tag> local search </tag>
+            
+            <tag> 搜索 </tag>
+            
+            <tag> 配置 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>关于hexo主题butterfly的Local Search配置问题</title>
       <link href="/2024/09/30/%E5%85%B3%E4%BA%8E%20hexo%20%E4%B8%BB%E9%A2%98%20butterfly%20%E7%9A%84%20Local%20Search%20%E9%85%8D%E7%BD%AE%E9%97%AE%E9%A2%98/"/>
       <url>/2024/09/30/%E5%85%B3%E4%BA%8E%20hexo%20%E4%B8%BB%E9%A2%98%20butterfly%20%E7%9A%84%20Local%20Search%20%E9%85%8D%E7%BD%AE%E9%97%AE%E9%A2%98/</url>
